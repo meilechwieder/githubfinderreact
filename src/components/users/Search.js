@@ -26,13 +26,8 @@ export class Search extends Component {
       this.props.setAlert('Please enter something', 'light');
     } else {
       this.props.searchUsers(this.state.searchText);
-      this.setState({ searchText: '' });
     }
   };
-
-  // clearUsers = () => {
-  //   this.setState({ searchText: '' });
-  // };
 
   render() {
     const { clearUsers, showClearBtn } = this.props;
